@@ -1,0 +1,20 @@
+:root {
+    /* Base */
+    --color-background: hsla(0, 0%, 95%, 1); 
+    --color-text:  hsla(202, 20%, 10%, 1);
+
+    /* Colors */
+    --color-blue-300:   hsla(202, 39%, 75%, 1);
+    --color-blue-600: hsla(202, 15%, 58%, 1);
+    --color-blue-900: hsla(208, 18%, 46%, 1);
+
+    --color-gray-100: hsla(202, 0%, 90%, 1);
+    --color-gray-300: hsla(202, 0%, 75%, 1);
+    --color-gray-300: hsla(202, 0%, 75%, 1);
+    --color-gray-900: hsla(202, 0%, 29%, 1);
+
+
+    /* Alpha */
+    --color-gray-900-alpha-7: hsla(202, 20%, 29%, .7);
+    --color-text-alpha-7:  hsla(202, 20%, 10%, .7);
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link href="assets/libs/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/color.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/utils.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/libs/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/libs/slick/slick-theme.css"/>
+
+    <title>Недвижимость VR PRO Demo</title>
+</head>
+<body>
+<header class="header" id="header">
+    <div class="container">
+        <div class="header__inner flexed">
+            <div class="header__logo">VR PRO</div>
+
+            <nav class="nav nav__links" id="nav">
+                <a href="#intro" class="nav__link">О нас</a>
+                <a id="contactus-link" href="#form" class="nav__link">Связаться</a>
+                <a href="#team" class="nav__link">Наша команда</a>
+                <a href="#samples" class="nav__link">Примеры работ</a>
+                <a href="#facts" class="nav__link">Интересные факты</a>
+                <a href="login.html" class="nav__link">Личный кабинет</a>
+            </nav>
+
+            <div class="flexed order__call">
+                <a href="tel:+74958857333" class="nav__link">+7 (495) 885-73-33</a>
+                <a id="form-button" class="button">Заказать звонок</a>
+            </div>
+            </nav>
+
+            <button class="nav-toggle" id="nav_toggle" type="button">
+                <span class="nav-toggle__item">Menu</span>
+            </button>
+        </div>
+    </div>
+</header>
+
+<main class="page" id="page">
+    <section class="intro flexed w-100" id="intro">
+        <div class="intro__inner flexed">
+            <div class="intro__text">
+                <p class="title">VR PRO - ВАШЕ БУДУЩЕЕ!</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer mb-5">
+    <div class="container">
+        <div class="footer__inner">
+            <p class="footer__subtitle">Копирование любого материала с настоящего сайта допускается только с письменного разрешения администрации сайта. Информация о ценах, планировках, а также специальных предложениях, размещённых на данном сайте, носит исключительно ознакомительный характер, не является публичной офертой, определяемой положениями Статьи 437 Гражданского кодекса Российской Федерации. Представленные на сайте изображения объектов долевого строительства носят предварительный ознакомительный характер и могут отличаться от фактических проектных решений, реализуемых застройщиком.</p>
+        </div>
+    </div>
+</footer>
+
+<div class="overflow hidden transparent" id="form-overflow">
+    <div class="container container--modal">
+        <div class="overflow__inner radius-10">
+            <h2 class="title">Заявка</h2>
+            <form action method="post" id="form" class="form">
+                <input name="name" type="text" class="form__input" placeholder="Имя" maxlength="30">
+                <input name="email" type="text" class="form__input" placeholder="Email" maxlength="30">
+                <input name="tel" type="text" class="form__input" placeholder="Телефон" maxlength="12">
+                <textarea name="message" size="40" rows="3" class="form__input" placeholder="Сообщение"></textarea>
+            </form>
+            <button id="send-form" class="button mt-3 w-100">Отправить</button>
+        </div>
+    </div>
+    <div class="overflow__close" id="overflow__close">
+        <img src="assets/img/close.svg" alt="Закрыть">
+    </div>
+</div>
+
+<script type="text/javascript" src="assets/libs/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="assets/libs/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="assets/libs/slick/slick.min.js"></script>
+<script type="text/javascript" src="assets/libs/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="assets/js/index.js"></script>
+<script type="text/javascript" src="assets/js/main.js"></script>
+<script type="text/javascript" src="assets/js/modal.js"></script>
+</body>
+</html>
