@@ -30,12 +30,10 @@
             <div class="header__logo">VR PRO</div>
 
             <nav class="nav nav__links" id="nav">
-                <a href="#intro" class="nav__link">О нас</a>
-                <a id="contactus-link" href="#form" class="nav__link">Связаться</a>
-                <a href="#team" class="nav__link">Наша команда</a>
-                <a href="#samples" class="nav__link">Примеры работ</a>
-                <a href="#facts" class="nav__link">Интересные факты</a>
-                <a href="login.html" class="nav__link">Личный кабинет</a>
+                <a href="#about" class="nav__link">О нас</a>
+                <a href="#slider" class="nav__link">Примеры</a>
+                <a href="#prices" class="nav__link">Стоимость</a>
+                <a id="contactus-link" href="#form1" class="nav__link">Связаться</a>
             </nav>
 
             <div class="flexed order__call">
@@ -52,16 +50,143 @@
 </header>
 
 <main class="page" id="page">
-    <section class="intro flexed w-100" id="intro">
+    <section class="intro flexed w-100 mb-5" id="intro">
         <div class="intro__inner flexed">
+            <iframe frameborder="0" class="intro__video"></iframe>
             <div class="intro__text">
                 <p class="title">VR PRO - ВАШЕ БУДУЩЕЕ!</p>
             </div>
         </div>
     </section>
+
+    <section class="about" id="about">
+        <div class="container container--small">
+            <div class="about__inner text-left">
+                <h2 class="title">
+                    Иновационные продажи квартир
+                </h2>
+                <p class="subtitle subtitle--large">
+                    Станьте первыми среди конкурентов и удиви своих потенциальных клиентов. Лучше один раз увидеть чем сто раз услышать.
+                </p>
+                <p class="subtitle mb-3 mt-3">
+                    Прогулка по не существующему району на стадии проекта.
+                    преимущество данного проект:
+                </p>
+                <ul class="list">
+                    <li class="list__item">Каждый потенциальный клинт сможет погулять по району которого еще нет имея при себе смартфон ил пк</li>
+                    <li class="list__item">А так же вы можете привлекать своих клиентов в отдел продаж и предлагать им виртуальный тур по району с высокой детализацией и реалистичностью</li>
+                    <li class="list__item">Возможен выезд менеджера к вип клиенту с портативным шлемом облет территории с высоты птичьего полета, прогулка по локации и не только!</li>
+                </ul>
+            </div>
+        </div>
+        <div class="container mt-5">
+            <div class="about__photos flexed">
+                <img src="https://placehold.it/1920x1080" alt="Дом" class="photo radius-20">
+                <img src="https://placehold.it/1920x1080" alt="Дом" class="photo radius-20">
+                <img src="https://placehold.it/1920x1080" alt="Дом" class="photo radius-20">
+            </div>
+        </div>
+    </section>
+
+    <section class="slider" id="slider">
+        <div class="container">
+            <div class="slider__inner">
+                <div>
+                    <img src="https://placehold.it/1920x1080" alt="360 видео" class="photo slider__image">
+                    <span class="subtitle subtitle--light">Жилой комплекс "Виртуальный"</span>
+                </div>
+                <div>
+                    <img src="https://placehold.it/1920x1080" alt="360 видео" class="photo slider__image">
+                    <span class="subtitle subtitle--light">Жилой комплекс "Виртуальный"</span>
+                </div>
+                <div>
+                    <img src="https://placehold.it/1920x1080" alt="360 видео" class="photo slider__image">
+                    <span class="subtitle subtitle--light">Жилой комплекс "Виртуальный"</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="prices" id="prices">
+        <div class="container container--small">
+            <h2 class="title">
+                Стоимость
+            </h2>
+        </div>
+        <div class="container">
+            <div class="prices__inner flexed">
+                <div class="prices__item">
+                    <h3 class="subtitle subtitle--large">
+                        Базовый
+                    </h3>
+                    <div class="prices__card radius-20">
+                        <ul class="list">
+                            <li class="list__item">Lorem Ipsum</li>
+                            <li class="list__item">Lorem Ipsum</li>
+                            <li class="list__item">Lorem Ipsum</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="prices__item">
+                    <h3 class="subtitle subtitle--large">
+                        Средний
+                    </h3>
+                    <div class="prices__card radius-20">
+                        <ul class="list">
+                            <li class="list__item">Lorem Ipsum</li>
+                            <li class="list__item">Lorem Ipsum</li>
+                            <li class="list__item">Lorem Ipsum</li>
+                            <li class="list__item">Lorem Ipsum</li>
+                            <li class="list__item">Lorem Ipsum</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="prices__item">
+                    <h3 class="subtitle subtitle--large">
+                        Максимум
+                    </h3>
+                    <div class="prices__card radius-20">
+                        <ul class="list">
+                            <li class="list__item">Lorem Ipsum</li>
+                            <li class="list__item">Lorem Ipsum</li>
+                            <li class="list__item">Lorem Ipsum</li>
+                            <li class="list__item">Lorem Ipsum</li>
+                            <li class="list__item">Lorem Ipsum</li>
+                            <li class="list__item">Lorem Ipsum</li>
+                            <li class="list__item">Lorem Ipsum</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container container--small">
+            <h2 class="title">Связаться</h2>
+        </div>
+        <div class="container">
+            <div class="form__inner flexed">
+                <div>
+                    <form action method="post" id="form1" class="form radius-10">
+                        <input name="name" type="text" class="form__input" placeholder="Имя" maxlength="30">
+                        <input name="email" type="text" class="form__input" placeholder="Email" maxlength="30">
+                        <input name="tel" type="text" class="form__input" placeholder="Телефон" maxlength="12">
+                        <textarea name="message" size="40" rows="3" class="form__input" placeholder="Сообщение"></textarea>
+                    </form>
+                    <button id="send-form-1" class="button mt-3 w-100">Отправить</button>
+                </div>
+                <div style="position:relative;overflow:hidden;" class="form__map">
+                    <a href="https://yandex.ru/maps?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Яндекс Карты</a>
+                    <a href="https://yandex.ru/maps/?l=sat%2Cskl&ll=38.218382%2C55.618154&mode=whatshere&utm_medium=mapframe&utm_source=maps&whatshere%5Bpoint%5D=38.215743%2C55.618582&whatshere%5Bzoom%5D=17&z=17" style="color:#eee;font-size:12px;position:absolute;top:14px;">Городское поселение Кратово — Яндекс Карты</a>
+                    <iframe src="https://yandex.ru/map-widget/v1/?l=sat%2Cskl&ll=38.218382%2C55.618154&mode=whatshere&whatshere%5Bpoint%5D=38.215743%2C55.618582&whatshere%5Bzoom%5D=17&z=17" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
 </main>
 
-<footer class="footer mb-5">
+<footer class="footer mb-5 mt-5">
     <div class="container">
         <div class="footer__inner">
             <p class="footer__subtitle">Копирование любого материала с настоящего сайта допускается только с письменного разрешения администрации сайта. Информация о ценах, планировках, а также специальных предложениях, размещённых на данном сайте, носит исключительно ознакомительный характер, не является публичной офертой, определяемой положениями Статьи 437 Гражданского кодекса Российской Федерации. Представленные на сайте изображения объектов долевого строительства носят предварительный ознакомительный характер и могут отличаться от фактических проектных решений, реализуемых застройщиком.</p>
@@ -73,13 +198,13 @@
     <div class="container container--modal">
         <div class="overflow__inner radius-10">
             <h2 class="title">Заявка</h2>
-            <form action method="post" id="form" class="form">
+            <form action method="post" id="form2" class="form">
                 <input name="name" type="text" class="form__input" placeholder="Имя" maxlength="30">
                 <input name="email" type="text" class="form__input" placeholder="Email" maxlength="30">
                 <input name="tel" type="text" class="form__input" placeholder="Телефон" maxlength="12">
                 <textarea name="message" size="40" rows="3" class="form__input" placeholder="Сообщение"></textarea>
             </form>
-            <button id="send-form" class="button mt-3 w-100">Отправить</button>
+            <button id="send-form-2" class="button mt-3 w-100">Отправить</button>
         </div>
     </div>
     <div class="overflow__close" id="overflow__close">
@@ -93,6 +218,6 @@
 <script type="text/javascript" src="assets/libs/bootstrap.bundle.min.js"></script>
 <script type="text/javascript" src="assets/js/index.js"></script>
 <script type="text/javascript" src="assets/js/main.js"></script>
-<script type="text/javascript" src="assets/js/modal.js"></script>
+<script type="text/javascript" src="assets/js/forms.js"></script>
 </body>
 </html>

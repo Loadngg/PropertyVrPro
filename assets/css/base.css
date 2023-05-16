@@ -1,6 +1,8 @@
 .radius-10 { border-radius: 10px; }
 .radius-20 { border-radius: 20px; }
 .flexed { display: flex; }
+.text-left { text-align: left; }
+.bold { font-weight: 700; }
 
 .ml-10 { margin-left: 10px; }
 .ml-20 { margin-left: 20px; }
