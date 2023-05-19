@@ -71,9 +71,9 @@
     border-radius: 20px;
     border: transparent;
 
-    -webkit-box-shadow: 4px 4px 8px 0px var(--color-gray-900);
-    -moz-box-shadow: 4px 4px 8px 0px var(--color-gray-900);
-    box-shadow: 4px 4px 8px 0px var(--color-gray-900);
+    -webkit-box-shadow: 4px 4px 8px 0px var(--color-gray-900-alpha-5);
+    -moz-box-shadow: 4px 4px 8px 0px var(--color-gray-900-alpha-5);
+    box-shadow: 4px 4px 8px 0px var(--color-gray-900-alpha-5);
 
     transition: background-color .1s linear;
 }

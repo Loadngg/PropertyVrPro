@@ -18,4 +18,8 @@
     --color-blue-900-alpha-7: hsla(208, 18%, 46%, .7);
     --color-gray-900-alpha-7: hsla(202, 0%, 29%, .7);
     --color-text-alpha-7:  hsla(202, 20%, 15%, .7);
+
+    --color-gray-900-alpha-5: hsla(202, 0%, 29%, .5);
+
+    --color-gray-900-alpha-2: hsla(202, 0%, 29%, .2);
 }
