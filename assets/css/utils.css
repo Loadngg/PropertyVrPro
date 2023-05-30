@@ -28,7 +28,12 @@
 }
 
 /* List */
-.list__item::before {
+li.list__item::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     display: inline-block;
     content: "";
     background-color: var(--color-blue-900);
@@ -45,10 +50,15 @@
     gap: 1rem;
 }
 
-.list__item { 
+li.list__item,
+div.list__item { 
+    position: relative;
     display: flex; 
+    flex-direction: column;
     gap: .7rem;
 }
+
+li.list__item { padding-left: calc(1rem + 10px); }
 
 .list__item__uptitle {
     font-weight: 700;

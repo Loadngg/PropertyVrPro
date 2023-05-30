@@ -217,6 +217,10 @@ iframe {
 .slick-list { border-radius: 10px; }
 .slick-list .photo { border-radius: 10px; }
 .slider__image { margin-bottom: 1rem; }
+.slider__video {
+    margin-bottom: 1rem;
+    height: 785px !important;
+}
 
 /* Footer */
 .footer__inner { text-align: left; }
