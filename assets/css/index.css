@@ -90,7 +90,17 @@ iframe {
     gap: 3rem;
 }
 
-.header__logo { font-size: 1.2rem; }
+.header__logo { 
+    background-color: var(--color-background);
+    border-radius: 10px;
+    width: 50px;
+    height: 50px; 
+}
+
+.header__logo > img {
+    width: inherit;
+    height: inherit;
+}
 
 /*Nav*/
 .nav-toggle {
