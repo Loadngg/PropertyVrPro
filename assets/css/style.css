@@ -83,3 +83,26 @@
 .form__inner { gap: 1rem; }
 .form__inner > * { flex: 1; }
 .form__map > iframe { height: 305px; }
+
+/* Media */
+@media (max-width: 1100px) {
+    .prices__inner { font-size: ; }
+    .review__form__item > label { font-size: .9rem; }
+    
+    .prices__inner { 
+        flex-direction: column;
+        gap: 3rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .form__inner { 
+        flex-direction: column; 
+        gap: 3rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .about__photos { flex-direction: column; }
+    .about__photos .photo { width: 100%; }
+}
