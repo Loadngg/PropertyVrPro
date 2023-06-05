@@ -99,6 +99,8 @@ iframe {
     height: inherit;
 }
 
+.order__call .button { background-color: var(--color-blue-600); }
+
 /*Nav*/
 .nav-toggle {
     width: 30px;

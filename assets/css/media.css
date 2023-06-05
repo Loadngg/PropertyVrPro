@@ -45,10 +45,7 @@
         text-align: right;
     }
 
-    .order__call .button { 
-        margin-right: -15px; 
-        background-color: var(--color-blue-600)
-    }
+    .order__call .button { margin-right: -15px; }
 }
 
 @media (max-width: 800px) {
