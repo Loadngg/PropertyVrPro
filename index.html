@@ -63,9 +63,11 @@
 <main class="page" id="page">
     <section class="intro flexed w-100 mb-5" id="intro">
         <div class="intro__inner flexed">
-            <iframe frameborder="0" class="intro__video"></iframe>
+            <video preload="auto" autoplay loop muted poster="assets/img/4.jpg" class="intro__video">
+                <source src="assets/video/intro-video.mp4" type="video/mp4"/>
+            </video>
             <div class="intro__text anim-items">
-                <p class="title">VR PRO - ВАШЕ БУДУЩЕЕ!</p>
+                <p class="title intro__title">VR Pro - создаём проекты будущего уже сегодня!</p>
             </div>
         </div>
     </section>
@@ -108,14 +110,18 @@
     <section class="slider anim-items" id="slider">
         <div class="container container--small">
             <div class="slider__inner">
-                <div>
-                    <iframe src="https://www.youtube.com/embed/TnaxfLB-yfw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="photo slider__video"></iframe>
-                    <span class="subtitle subtitle--light">Жилой комплекс "Виртуальный"</span>
-                </div>
-                <div>
+                <div class="slider__360">
+                    <div class="slider__360-tooltip radius-10">
+                        <img src="assets/img/360-icon.svg" alt="360" class="photo">
+                        <span class="subtitle">360-видео</span>
+                    </div>
                     <iframe src="https://www.youtube.com/embed/UxovFIY-g-c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="photo slider__video"></iframe>
                     <span class="subtitle subtitle--light">Жилой комплекс "Виртуальный"</span>
                 </div>
+                <!-- <div>
+                    <iframe src="https://www.youtube.com/embed/TnaxfLB-yfw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="photo slider__video"></iframe>
+                    <span class="subtitle subtitle--light">Жилой комплекс "Виртуальный"</span>
+                </div> -->
             </div>
         </div>
     </section>

@@ -231,6 +231,40 @@ iframe {
     height: 668px !important;
 }
 
+.slider__360 { position: relative; }
+
+.slider__360-tooltip { 
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    width: 100%;
+    height: 668px;
+
+    background-color: var(--color-black-alpha-7);
+    pointer-events: none;
+}
+
+.slider__360-tooltip > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.slider__360-tooltip > span {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 220px;
+
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+    color: white;
+}
+
 /* Footer */
 .footer__inner { text-align: left; }
 
