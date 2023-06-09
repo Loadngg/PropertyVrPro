@@ -28,7 +28,7 @@
 
     border-radius: 0;
 
-    filter: brightness(25%);
+    filter: brightness(50%);
 }
 
 .intro__text {
@@ -36,6 +36,7 @@
     bottom: 5rem;
     margin: 0 auto;
 }
+
 .intro__title { 
     padding: 0 2rem;
     text-align: center;
