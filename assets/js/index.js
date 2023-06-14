@@ -64,6 +64,22 @@ for (let i = 0; i < navLinks.length; i++) {
 }
 
 // Animation
+iOS = () => {
+    return [
+      'iPad Simulator',
+      'iPhone Simulator',
+      'iPod Simulator',
+      'iPad',
+      'iPhone',
+      'iPod'
+    ].includes(navigator.platform) || (navigator.userAgent.includes("Mac") && "ontouchend" in document)
+}
+
+let slider_ios_tooltip = document.getElementById("slider-360-ios-tooltip")
+let slider_tooltip = document.getElementById("slider-360-tooltip")
+
+iOS() ? slider_ios_tooltip.classList.remove("hidden") : slider_tooltip.classList.remove("hidden")
+
 const animItems = document.querySelectorAll('.anim-items');
 
 if (animItems.length > 0) {

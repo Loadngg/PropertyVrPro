@@ -233,7 +233,8 @@ iframe {
 
 .slider__360 { position: relative; }
 
-.slider__360-tooltip { 
+.slider__360-tooltip,
+.slider__360-ios-tooltip { 
     position: absolute;
     top: 0;
     bottom: 0;
@@ -253,16 +254,25 @@ iframe {
     object-fit: contain;
 }
 
-.slider__360-tooltip > span {
+.slider__360-tooltip > span,
+.slider__360-ios-tooltip > span {
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 220px;
 
     width: 100%;
     text-align: center;
     z-index: 1;
     color: white;
+}
+
+.slider__360-tooltip > span { bottom: 220px; }
+.slider__360-ios-tooltip > span {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 0;
+    bottom: 0;
 }
 
 /* Footer */

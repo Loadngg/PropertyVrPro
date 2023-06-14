@@ -1,15 +1,12 @@
 @keyframes video-360 {
-	0% {
-		opacity: 0;
-	}
+	0% { opacity: 0; }
+	50% { opacity: 1; }
+	100% { opacity: 0; }
+}
 
-	50% {
-		opacity: 1;
-	}
-
-	100% {
-		opacity: 0;
-	}
+@keyframes video-360-ios {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
 }
 
 .anim-items {
@@ -28,8 +25,11 @@
     transform: translate3d(0, 0, 0);
 }
 
-.slider.show .slider__360-tooltip {
+.slider.show .slider__360-tooltip,
+.slider.show .slider__360-ios-tooltip {
     opacity: 0;
-    animation: video-360 1.2s ease-in-out 0s 2 normal forwards;
     pointer-events: none
 }
+
+.slider.show .slider__360-tooltip { animation: video-360-ios 1.2s ease-in-out 0s 2 normal forwards; }
+.slider.show .slider__360-ios-tooltip { animation: video-360-ios 1.2s ease-in-out 0s 1 normal forwards; }
