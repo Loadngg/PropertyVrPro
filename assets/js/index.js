@@ -65,14 +65,17 @@ for (let i = 0; i < navLinks.length; i++) {
 
 // Animation
 iOS = () => {
-    return [
-      'iPad Simulator',
-      'iPhone Simulator',
-      'iPod Simulator',
-      'iPad',
-      'iPhone',
-      'iPod'
-    ].includes(navigator.platform) || (navigator.userAgent.includes("Mac") && "ontouchend" in document)
+    if (/iPad|iPhone|iPod/.test(navigator.userAgent) 
+    || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1)) return true
+    else return false
+    // return [
+    //   'iPad Simulator',
+    //   'iPhone Simulator',
+    //   'iPod Simulator',
+    //   'iPad',
+    //   'iPhone',
+    //   'iPod'
+    // ].includes(navigator.platform) || (navigator.userAgent.includes("Mac") && "ontouchend" in document)
 }
 
 let slider_ios_tooltip = document.getElementById("slider-360-ios-tooltip")
