@@ -31,5 +31,5 @@
     pointer-events: none
 }
 
-.slider.show .slider__360-tooltip { animation: video-360-ios 1.2s ease-in-out 0s 2 normal forwards; }
+.slider.show .slider__360-tooltip { animation: video-360 1.2s ease-in-out 0s 2 normal forwards; }
 .slider.show .slider__360-ios-tooltip { animation: video-360-ios 1.2s ease-in-out 0s 1 normal forwards; }

@@ -65,7 +65,8 @@
 
     .nav { top: 50px; }
     .slider__video { height: 500px !important; }
-    .slider__360-tooltip { height: 500px !important; }
+    .slider__360-tooltip,
+    .slider__360-ios-tooltip { height: 500px !important; }
     .slider__360-tooltip > span { bottom: 170px }
 }
 
@@ -83,6 +84,7 @@
 @media (max-width: 400px) {
     .intro__title { font-size: 1.3rem; }
     .slider__video { height: 400px !important; }
-    .slider__360-tooltip { height: 400px !important; }
+    .slider__360-tooltip,
+    .slider__360-ios-tooltip { height: 400px !important; }
     .slider__360-tooltip > span { bottom: 130px }
 }

@@ -264,6 +264,7 @@ iframe {
     text-align: center;
     z-index: 1;
     color: white;
+    padding: 0 1rem;
 }
 
 .slider__360-tooltip > span { bottom: 220px; }
