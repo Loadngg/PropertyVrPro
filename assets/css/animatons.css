@@ -19,6 +19,7 @@
 .slider { transform: translateY(10%); }
 .prices__inner { transform: translateX(-100%); }
 .form__inner { transform: translateY(50%); }
+.integration__inner { transform: translateY(50%); }
 
 .anim-items.show {
     opacity: 1;
