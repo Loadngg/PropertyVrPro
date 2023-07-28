@@ -7,21 +7,21 @@ const close_form_button = document.getElementById("overflow__close")
 const form_button = document.getElementById("form-button")
 
 form_button.onclick = () => {
-    modal.classList.remove('hidden'); 
-    setTimeout(function(){
+    modal.classList.remove('hidden');
+    setTimeout(function() {
         modal.classList.remove('transparent')
     }, 20)
 };
 
 const hideOverflow = (event) => {
     event.preventDefault();
-    modal.classList.add('transparent'); 
-    setTimeout(function(){
+    modal.classList.add('transparent');
+    setTimeout(function() {
         modal.classList.add('hidden')
     }, 500);
 }
 
-const sendOverflow = (event, form, hide=true) => {
+const sendOverflow = (event, form, hide = true) => {
     form.reset();
     hide && hideOverflow(event);
 }

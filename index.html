@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,8 +19,8 @@
     <link rel="stylesheet" href="assets/css/animatons.css">
     <link rel="stylesheet" href="assets/css/media.css">
 
-    <link rel="stylesheet" type="text/css" href="assets/libs/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="assets/libs/slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/libs/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="assets/libs/slick/slick-theme.css" />
 
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -31,314 +32,366 @@
 
     <title>Недвижимость VR PRO Demo</title>
 </head>
+
 <body>
-<header class="header" id="header">
-    <div class="container">
-        <div class="header__inner flexed">
-            <a href="#intro" class="header__logo"><img src="logo_VRPRO.svg" alt="VR PRO"></a>
-
-            <nav class="flexed nav" id="nav">
-                <div class="nav__links">
-                    <a href="#about" class="nav__link">О нас</a>
-                    <a href="#slider" class="nav__link">Примеры</a>
-                    <a href="#prices" class="nav__link">Стоимость</a>
-                    <a href="#integration" class="nav__link">Интеграция</a>
-                    <a id="contactus-link" href="#form1" class="nav__link">Связаться</a>
-                </div>
-
-                <div class="flexed order__call">
-                    <div class="flexed">
-                        <a href="tel:+74958857333" class="nav__link">+7 (495) 885-73-33</a>
-                        <a id="form-button" class="button">Заказать звонок</a>
-                    </div>
-                </div>
-            </nav>
-
-            <button class="nav-toggle" id="nav_toggle" type="button">
-                <span class="nav-toggle__item">Menu</span>
-            </button>
-        </div>
-    </div>
-</header>
-
-<main class="page" id="page">
-    <section class="intro flexed w-100 mb-5" id="intro">
-        <div class="intro__inner flexed">
-            <video preload="auto" playsinline autoplay loop muted poster="assets/img/4.jpg" class="intro__video">
-                <source src="assets/video/intro-video.mp4" type="video/mp4"/>
-            </video>
-            <div class="intro__text anim-items">
-                <p class="title intro__title">VR Pro - создаём проекты будущего уже сегодня!</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="about anim-items" id="about">
-        <div class="container container--small">
-            <div class="about__inner text-left">
-                <h2 class="title">
-                    Инновационные продажи квартир
-                </h2>
-                <p class="subtitle subtitle--large">
-                    Станьте первыми среди конкурентов и удивите своих потенциальных клиентов. Лучше один раз увидеть, чем сто раз услышать.
-                </p>
-                <p class="subtitle mb-3 mt-3">
-                    Прогулка по несуществующему району на стадии проекта.
-                    Преимущества данного проекта:
-                </p>
-                <ul class="list">
-                    <li class="list__item">
-                        Каждый потенциальный клиент сможет погулять по району, который еще не построен, просто открыв сайт на смартфоне или ПК.
-                    </li>
-                    <li class="list__item">
-                        Вы сможете привлекать своих клиентов в отдел продаж и предлагать им виртуальный тур по району с высокой детализацией и реалистичностью.
-                    </li>
-                    <li class="list__item">
-                        Возможен выезд менеджера к VIP-клиенту с портативным шлемом, в котором Вы сможете продемонстрировать облет территории с высоты птичьего полета, прогулку по локации, интерьер будущей квартиры и не только!
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="container mt-5">
-            <div class="about__photos flexed">
-                <img src="assets/img/1.jpg" alt="Дом" class="photo radius-10">
-                <img src="assets/img/2.jpg" alt="Дом" class="photo radius-10">
-                <img src="assets/img/3.jpg" alt="Дом" class="photo radius-10">
-            </div>
-        </div>
-    </section>
-
-    <section class="slider anim-items" id="slider">
-        <div class="container container--small">
-            <div class="slider__inner">
-                <div class="slider__360">
-                    <div class="slider__360-ios-tooltip radius-10 hidden" id="slider-360-ios-tooltip">
-                        <span class="subtitle subtitle--large">Видео отключено для Apple устройств<br>Пожалуйста, откройте видео в приложении YouTube.</span>
-                    </div>
-                    <div class="slider__360-tooltip radius-10 hidden" id="slider-360-tooltip">
-                        <img src="assets/img/360-icon.svg" alt="360" class="photo">
-                        <span class="subtitle">360-видео</span>
-                    </div>
-                    <iframe src="https://www.youtube.com/embed/UxovFIY-g-c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="photo slider__video"></iframe>
-                    <span class="subtitle subtitle--light">Жилой комплекс "Виртуальный"</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="prices" id="prices">
-        <div class="container container--small">
-            <h2 class="title">
-                Стоимость
-            </h2>
-            <div class="prices__inner anim-items flexed">
-                <div class="prices__item">
-                    <h3 class="subtitle subtitle--large">
-                        Базовый
-                    </h3>
-                    <div class="prices__card radius-10">
-                        <ul class="list">
-                            <div class="list__item">
-                                <li class="list__item text-left">Разработка сайта - визитки (до 5 страниц) с размещением нормативной и технической документации, корпоративной стилизацией</li>
-                                <li class="list__item text-left">Отрисовка до 5 рендеров жилищного комплекса в высоком разрешении (FullHD)</li>
-                                <li class="list__item text-left">Видео с высококачественным рендером жилищного комплекса на основе разработанных моделей (FullHD)</li>
-                            </div>
-                                <div class="list__item">
-                                <li class="list-item"><hr></li>
-                                <li class="list-item text-left">
-                                    <p class="bold">От 290 000 рублей</p>
-                                    <p class="bold">До 1 месяца</p>
-                                </li>
-                            </div>
-                        </ul>
-                    </div>
-                </div>
-                <div class="prices__item">
-                    <h3 class="subtitle subtitle--large">
-                        Стандартный
-                    </h3>
-                    <div class="prices__card radius-10">
-                        <ul class="list">
-                            <div class="list__item">
-                                <li class="list__item text-left">Разработка 
-                                    корпоративного сайта размещением нормативной и технической документации, корпоративной стилизацией
-                                </li>
-                                <li class="list__item text-left">Отрисовка до 10 рендеров жилищного комплекса, черновой отделки одной квартиры с видом из окна на двор в высоком разрешении (4K)</li>
-                                <li class="list__item text-left">Видео с высококачественным рендером жилищного комплекса на основе разработанных моделей + вид с высоты «птичьего полета» (До 4K)<br>Панорамное видео для шлема виртуальной реальности и сайта<br>Один в шлем в комплекте
-                                </li>
-                            </div>
-                            <div class="list__item">
-                                <li class="list-item"><hr></li>
-                                <li class="list-item text-left">
-                                    <p class="bold">От 490 000 рублей</p>
-                                    <p class="bold">До 2 месяцев</p>
-                                </li>
-                            </div>
-                        </ul>
-                    </div>
-                </div>
-                <div class="prices__item">
-                    <h3 class="subtitle subtitle--large">
-                        Расширенный
-                    </h3>
-                    <div class="prices__card radius-10">
-                        <ul class="list">
-                            <div class="list__item">
-                                <li class="list__item text-left">
-                                    Подготовка и разметка квартир для «шахматки» и интерактивных модулей поэтажных планов<br>(без учета абонентской платы за модуль)
-    
-                                </li>
-                                <li class="list__item text-left">
-                                    Отрисовка 10 рендеров трех дизайнов квартир с видом из каждой квартиры
-                                </li>
-                                <li class="list__item text-left">
-                                    Панорамное видео с высококачественным рендером квартир на основе разработанных моделей + (До 4K)
-                                </li>
-                            </div>
-                            <div class="list__item">
-                                <li class="list-item"><hr></li>
-                                <li class="list-item text-left">
-                                    <p class="bold">От 690 000 рублей</p>
-                                    <p class="bold">До 2 месяцев</p>
-                                </li>
-                            </div>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="integration" id="integration">
-        <div class="container container--small">
-            <h2 class="title">
-                Интеграция с M2L<span style="color: rgb(32, 32, 172);">A</span>B
-            </h2>
-            <div class="integration__inner anim-items">
-                <p class="subtitle subtitle--large mb-5">
-                    Интегрируем современное решение от партнеров M2ЛAБ для автоматизации полного цикла продаж, маркетинга, внутрикорпоративной работы, послепродажного и гарантийного обслуживания при реализации жилой, коммерческой и загородной недвижимости.
-                </p>
-                <div class="flexed integration__tabs mb-5" id="tabs-head">
-                    <div class="integration__tab radius-20" data-tab="Шахматка">
-                        <img src="assets/img/integration/шахматка.svg" alt="Шахматка">
-                        <span>Шахматка</span>
-                    </div>
-                    <div class="integration__tab radius-20" data-tab="CRM">
-                        <img src="assets/img/integration/crm.svg" alt="CRM">
-                        <span>CRM</span>
-                    </div>
-                    <div class="integration__tab radius-20" data-tab="Каталог">
-                        <img src="assets/img/integration/3д-каталог.svg" alt="3D-каталог">
-                        <span>3D каталог</span>
-                    </div>
-                    <div class="integration__tab radius-20" data-tab="Договоры">
-                        <img src="assets/img/integration/договоры.svg" alt="Договоры">
-                        <span>Договоры</span>
-                    </div>
-                    <div class="integration__tab radius-20" data-tab="Выгрузка">
-                        <img src="assets/img/integration/выгрузка.svg" alt="Выгрузка">
-                        <span>Выгрузка</span>
-                    </div>
-                    <div class="integration__tab radius-20" data-tab="Интеграции">
-                        <img src="assets/img/integration/интеграция.svg" alt="Интеграции">
-                        <span>Интеграции</span>
-                    </div>
-                    <div class="integration__tab radius-20" data-tab="Отчёты">
-                        <img src="assets/img/integration/отчёты.svg" alt="Отчёты">
-                        <span>Отчёты</span>
-                    </div>
-                    <div class="integration__tab radius-20" data-tab="Аналитика">
-                        <img src="assets/img/integration/аналитика.svg" alt="Аналитика">
-                        <span>Аналитика</span>
-                    </div>
-                </div>
-                <div class="integration_body" id="tabs-body">
-                    <span class="integration_text" data-tab="Шахматка">
-                        Многофункциональная шахматка ЖК или коттеджного поселка с данными всех типов недвижимости. Менеджер ответит на вопросы клиента и забронирует нужное помещение.
-                    </span>
-                    <span class="integration_text" data-tab="CRM">
-                        Лиды со всех каналов и данные об объектах недвижимости фиксируются в одной CRM. Управление сделками на каждом этапе работы сотрудника. Ни один клиент не будет потерян!
-                    </span>
-                    <span class="integration_text" data-tab="Каталог">
-                        Интерактивный каталог недвижимости с шахматкой для сайта ЖК или генплан для коттеджного поселка. Мгновенное обновление данных без участия специалиста.
-                    </span>
-                    <span class="integration_text" data-tab="Договоры">
-                        Автоматическое формирование документов на любом этапе сделки. Хранение всей цепочки документов по клиенту.
-                    </span>
-                    <span class="integration_text" data-tab="Выгрузка">
-                        Выгрузка объектов для порталов и агрегаторов (ДомКлик, Домой.ру от Дом.РФ, Авито, Яндекс.Недвижимость, ЦИАН, сайт застройщика и др.). Фиды обновляются в реальном времени, синхронизированы с внутренней шахматкой.
-                    </span>
-                    <span class="integration_text" data-tab="Интеграции">
-                        Интеграция CRM с телефонией, почтой, 1С, сайтом строительной компании, мессенджерами и др. Предоставляем API для работы со сторонними решениями.
-                    </span>
-                    <span class="integration_text" data-tab="Отчёты">
-                        Более 20 детальных отчетов по любым параметрам. Учет продаж, броней, остатков и денег. Динамика продаж в режиме реального времени. Печать/экспорт отчетов
-                    </span>
-                    <span class="integration_text" data-tab="Аналитика">
-                        Аналитика в онлайн формате. Быстрый доступ к данным. Информация для правильной оценки ситуации. Формирование ответов на ваши вопросы в 1 клик.
-                    </span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <div class="container container--small">
-            <h2 class="title">Связаться</h2>
-        </div>
+    <header class="header" id="header">
         <div class="container">
-            <div class="form__inner anim-items flexed">
-                <div>
-                    <form action method="post" id="form1" class="form radius-10">
-                        <input name="name" type="text" class="form__input" placeholder="Имя" maxlength="30">
-                        <input name="email" type="text" class="form__input" placeholder="Email" maxlength="30">
-                        <input name="tel" type="text" class="form__input" placeholder="Телефон" maxlength="12">
-                        <textarea name="message" size="40" rows="3" class="form__input" placeholder="Сообщение"></textarea>
-                    </form>
-                    <button id="send-form-1" class="button mt-3 w-100">Отправить</button>
-                </div>
-                <div style="position:relative;overflow:hidden;" class="form__map">
-                    <a href="https://yandex.ru/maps?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Яндекс Карты</a>
-                    <a href="https://yandex.ru/maps/?l=sat%2Cskl&ll=38.218382%2C55.618154&mode=whatshere&utm_medium=mapframe&utm_source=maps&whatshere%5Bpoint%5D=38.215743%2C55.618582&whatshere%5Bzoom%5D=17&z=17" style="color:#eee;font-size:12px;position:absolute;top:14px;">Городское поселение Кратово — Яндекс Карты</a>
-                    <iframe src="https://yandex.ru/map-widget/v1/?l=sat%2Cskl&ll=38.218382%2C55.618154&mode=whatshere&whatshere%5Bpoint%5D=38.215743%2C55.618582&whatshere%5Bzoom%5D=17&z=17" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
-                </div>
+            <div class="header__inner flexed">
+                <a href="#intro" class="header__logo"><img src="logo_VRPRO.svg" alt="VR PRO"></a>
+
+                <nav class="flexed nav" id="nav">
+                    <div class="nav__links">
+                        <a href="#about" class="nav__link">О нас</a>
+                        <a href="#slider" class="nav__link">Примеры</a>
+                        <a href="#prices" class="nav__link">Стоимость</a>
+                        <a href="#integration" class="nav__link">Интеграция</a>
+                        <a id="contactus-link" href="#form1" class="nav__link">Связаться</a>
+                    </div>
+
+                    <div class="flexed order__call">
+                        <div class="flexed">
+                            <a href="tel:+79699998068" class="nav__link">+7 (969) 999-80-68</a>
+                            <a id="form-button" class="button">Заказать звонок</a>
+                        </div>
+                    </div>
+                </nav>
+
+                <button class="nav-toggle" id="nav_toggle" type="button">
+                    <span class="nav-toggle__item">Menu</span>
+                </button>
             </div>
         </div>
-    </section>
-</main>
+    </header>
 
-<footer class="footer mb-5 mt-5">
-    <div class="container">
-        <div class="footer__inner">
-            <p class="footer__subtitle">Копирование любого материала с настоящего сайта допускается только с письменного разрешения администрации сайта. Информация о ценах, планировках, а также специальных предложениях, размещённых на данном сайте, носит исключительно ознакомительный характер, не является публичной офертой, определяемой положениями Статьи 437 Гражданского кодекса Российской Федерации. Представленные на сайте изображения объектов долевого строительства носят предварительный ознакомительный характер и могут отличаться от фактических проектных решений, реализуемых застройщиком.</p>
+    <main class="page" id="page">
+        <section class="intro flexed w-100 mb-5" id="intro">
+            <div class="intro__inner flexed">
+                <video preload="auto" playsinline autoplay loop muted poster="assets/img/4.jpg" class="intro__video">
+                    <source src="assets/video/intro-video.mp4" type="video/mp4" />
+                </video>
+                <div class="intro__text anim-items">
+                    <p class="title intro__title">VR Pro - создаём проекты будущего уже сегодня!</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="about anim-items" id="about">
+            <div class="container container--small">
+                <div class="about__inner text-left">
+                    <h2 class="title">
+                        Инновационные продажи квартир
+                    </h2>
+                    <p class="subtitle subtitle--large">
+                        Станьте первыми среди конкурентов и удивите своих потенциальных клиентов. Лучше один раз
+                        увидеть, чем сто раз услышать.
+                    </p>
+                    <p class="subtitle mb-3 mt-3">
+                        Прогулка по несуществующему району на стадии проекта.
+                        Преимущества данного проекта:
+                    </p>
+                    <ul class="list">
+                        <li class="list__item">
+                            Каждый потенциальный клиент сможет погулять по району, который еще не построен, просто
+                            открыв сайт на смартфоне или ПК.
+                        </li>
+                        <li class="list__item">
+                            Вы сможете привлекать своих клиентов в отдел продаж и предлагать им виртуальный тур по
+                            району с высокой детализацией и реалистичностью.
+                        </li>
+                        <li class="list__item">
+                            Возможен выезд менеджера к VIP-клиенту с портативным шлемом, в котором Вы сможете
+                            продемонстрировать облет территории с высоты птичьего полета, прогулку по локации, интерьер
+                            будущей квартиры и не только!
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container mt-5">
+                <div class="about__photos flexed">
+                    <img src="assets/img/1.jpg" alt="Дом" class="photo radius-10">
+                    <img src="assets/img/2.jpg" alt="Дом" class="photo radius-10">
+                    <img src="assets/img/3.jpg" alt="Дом" class="photo radius-10">
+                </div>
+            </div>
+        </section>
+
+        <section class="slider anim-items" id="slider">
+            <div class="container container--small">
+                <div class="slider__inner">
+                    <div class="slider__360">
+                        <div class="slider__360-ios-tooltip radius-10 hidden" id="slider-360-ios-tooltip">
+                            <span class="subtitle subtitle--large">Видео отключено для Apple устройств<br>Пожалуйста,
+                                откройте видео в приложении YouTube.</span>
+                        </div>
+                        <div class="slider__360-tooltip radius-10 hidden" id="slider-360-tooltip">
+                            <img src="assets/img/360-icon.svg" alt="360" class="photo">
+                            <span class="subtitle">360-видео</span>
+                        </div>
+                        <iframe src="https://www.youtube.com/embed/UxovFIY-g-c" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen class="photo slider__video"></iframe>
+                        <span class="subtitle subtitle--light">Жилой комплекс "Виртуальный"</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="prices" id="prices">
+            <div class="container container--small">
+                <h2 class="title">
+                    Стоимость
+                </h2>
+                <div class="prices__inner anim-items flexed">
+                    <div class="prices__item">
+                        <h3 class="subtitle subtitle--large">
+                            Базовый
+                        </h3>
+                        <div class="prices__card radius-10">
+                            <ul class="list">
+                                <div class="list__item">
+                                    <li class="list__item text-left">Разработка сайта - визитки (до 5 страниц) с
+                                        размещением нормативной и технической документации, корпоративной стилизацией
+                                    </li>
+                                    <li class="list__item text-left">Отрисовка до 5 рендеров жилищного комплекса в
+                                        высоком разрешении (FullHD)</li>
+                                    <li class="list__item text-left">Видео с высококачественным рендером жилищного
+                                        комплекса на основе разработанных моделей (FullHD)</li>
+                                </div>
+                                <div class="list__item">
+                                    <li class="list-item">
+                                        <hr>
+                                    </li>
+                                    <li class="list-item text-left">
+                                        <p class="bold">От 290 000 рублей</p>
+                                        <p class="bold">До 1 месяца</p>
+                                    </li>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="prices__item">
+                        <h3 class="subtitle subtitle--large">
+                            Стандартный
+                        </h3>
+                        <div class="prices__card radius-10">
+                            <ul class="list">
+                                <div class="list__item">
+                                    <li class="list__item text-left">Разработка
+                                        корпоративного сайта размещением нормативной и технической документации,
+                                        корпоративной стилизацией
+                                    </li>
+                                    <li class="list__item text-left">Отрисовка до 10 рендеров жилищного комплекса,
+                                        черновой отделки одной квартиры с видом из окна на двор в высоком разрешении
+                                        (4K)</li>
+                                    <li class="list__item text-left">Видео с высококачественным рендером жилищного
+                                        комплекса на основе разработанных моделей + вид с высоты «птичьего полета» (До
+                                        4K)<br>Панорамное видео для шлема виртуальной реальности и сайта<br>Один в шлем
+                                        в комплекте
+                                    </li>
+                                </div>
+                                <div class="list__item">
+                                    <li class="list-item">
+                                        <hr>
+                                    </li>
+                                    <li class="list-item text-left">
+                                        <p class="bold">От 490 000 рублей</p>
+                                        <p class="bold">До 2 месяцев</p>
+                                    </li>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="prices__item">
+                        <h3 class="subtitle subtitle--large">
+                            Расширенный
+                        </h3>
+                        <div class="prices__card radius-10">
+                            <ul class="list">
+                                <div class="list__item">
+                                    <li class="list__item text-left">
+                                        Подготовка и разметка квартир для «шахматки» и интерактивных модулей поэтажных
+                                        планов<br>(без учета абонентской платы за модуль)
+
+                                    </li>
+                                    <li class="list__item text-left">
+                                        Отрисовка 10 рендеров трех дизайнов квартир с видом из каждой квартиры
+                                    </li>
+                                    <li class="list__item text-left">
+                                        Панорамное видео с высококачественным рендером квартир на основе разработанных
+                                        моделей + (До 4K)
+                                    </li>
+                                </div>
+                                <div class="list__item">
+                                    <li class="list-item">
+                                        <hr>
+                                    </li>
+                                    <li class="list-item text-left">
+                                        <p class="bold">От 690 000 рублей</p>
+                                        <p class="bold">До 2 месяцев</p>
+                                    </li>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="integration" id="integration">
+            <div class="container container--small">
+                <h2 class="title">
+                    Интеграция с M2L<span style="color: rgb(32, 32, 172);">A</span>B
+                </h2>
+                <div class="integration__inner anim-items">
+                    <p class="subtitle subtitle--large mb-5">
+                        Интегрируем современное решение от партнеров M2ЛAБ для автоматизации полного цикла продаж,
+                        маркетинга, внутрикорпоративной работы, послепродажного и гарантийного обслуживания при
+                        реализации жилой, коммерческой и загородной недвижимости.
+                    </p>
+                    <div class="flexed integration__tabs mb-5" id="tabs-head">
+                        <div class="integration__tab radius-20" data-tab="Шахматка">
+                            <img src="assets/img/integration/шахматка.svg" alt="Шахматка">
+                            <span>Шахматка</span>
+                        </div>
+                        <div class="integration__tab radius-20" data-tab="CRM">
+                            <img src="assets/img/integration/crm.svg" alt="CRM">
+                            <span>CRM</span>
+                        </div>
+                        <div class="integration__tab radius-20" data-tab="Каталог">
+                            <img src="assets/img/integration/3д-каталог.svg" alt="3D-каталог">
+                            <span>3D каталог</span>
+                        </div>
+                        <div class="integration__tab radius-20" data-tab="Договоры">
+                            <img src="assets/img/integration/договоры.svg" alt="Договоры">
+                            <span>Договоры</span>
+                        </div>
+                        <div class="integration__tab radius-20" data-tab="Выгрузка">
+                            <img src="assets/img/integration/выгрузка.svg" alt="Выгрузка">
+                            <span>Выгрузка</span>
+                        </div>
+                        <div class="integration__tab radius-20" data-tab="Интеграции">
+                            <img src="assets/img/integration/интеграция.svg" alt="Интеграции">
+                            <span>Интеграции</span>
+                        </div>
+                        <div class="integration__tab radius-20" data-tab="Отчёты">
+                            <img src="assets/img/integration/отчёты.svg" alt="Отчёты">
+                            <span>Отчёты</span>
+                        </div>
+                        <div class="integration__tab radius-20" data-tab="Аналитика">
+                            <img src="assets/img/integration/аналитика.svg" alt="Аналитика">
+                            <span>Аналитика</span>
+                        </div>
+                    </div>
+                    <div class="integration_body" id="tabs-body">
+                        <span class="integration_text" data-tab="Шахматка">
+                            Многофункциональная шахматка ЖК или коттеджного поселка с данными всех типов недвижимости.
+                            Менеджер ответит на вопросы клиента и забронирует нужное помещение.
+                        </span>
+                        <span class="integration_text" data-tab="CRM">
+                            Лиды со всех каналов и данные об объектах недвижимости фиксируются в одной CRM. Управление
+                            сделками на каждом этапе работы сотрудника. Ни один клиент не будет потерян!
+                        </span>
+                        <span class="integration_text" data-tab="Каталог">
+                            Интерактивный каталог недвижимости с шахматкой для сайта ЖК или генплан для коттеджного
+                            поселка. Мгновенное обновление данных без участия специалиста.
+                        </span>
+                        <span class="integration_text" data-tab="Договоры">
+                            Автоматическое формирование документов на любом этапе сделки. Хранение всей цепочки
+                            документов по клиенту.
+                        </span>
+                        <span class="integration_text" data-tab="Выгрузка">
+                            Выгрузка объектов для порталов и агрегаторов (ДомКлик, Домой.ру от Дом.РФ, Авито,
+                            Яндекс.Недвижимость, ЦИАН, сайт застройщика и др.). Фиды обновляются в реальном времени,
+                            синхронизированы с внутренней шахматкой.
+                        </span>
+                        <span class="integration_text" data-tab="Интеграции">
+                            Интеграция CRM с телефонией, почтой, 1С, сайтом строительной компании, мессенджерами и др.
+                            Предоставляем API для работы со сторонними решениями.
+                        </span>
+                        <span class="integration_text" data-tab="Отчёты">
+                            Более 20 детальных отчетов по любым параметрам. Учет продаж, броней, остатков и денег.
+                            Динамика продаж в режиме реального времени. Печать/экспорт отчетов
+                        </span>
+                        <span class="integration_text" data-tab="Аналитика">
+                            Аналитика в онлайн формате. Быстрый доступ к данным. Информация для правильной оценки
+                            ситуации. Формирование ответов на ваши вопросы в 1 клик.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container container--small">
+                <h2 class="title">Связаться</h2>
+            </div>
+            <div class="container">
+                <div class="form__inner anim-items flexed">
+                    <div>
+                        <form action method="post" id="form1" class="form radius-10">
+                            <input name="name" type="text" class="form__input" placeholder="Имя" maxlength="30">
+                            <input name="email" type="text" class="form__input" placeholder="Email" maxlength="30">
+                            <input name="tel" type="text" class="form__input" placeholder="Телефон" maxlength="12">
+                            <textarea name="message" size="40" rows="3" class="form__input"
+                                placeholder="Сообщение"></textarea>
+                        </form>
+                        <button id="send-form-1" class="button mt-3 w-100">Отправить</button>
+                    </div>
+                    <div style="position:relative;overflow:hidden;" class="form__map">
+                        <a href="https://yandex.ru/maps?utm_medium=mapframe&utm_source=maps"
+                            style="color:#eee;font-size:12px;position:absolute;top:0px;">Яндекс Карты</a>
+                        <a href="https://yandex.ru/maps/?l=sat%2Cskl&ll=38.218382%2C55.618154&mode=whatshere&utm_medium=mapframe&utm_source=maps&whatshere%5Bpoint%5D=38.215743%2C55.618582&whatshere%5Bzoom%5D=17&z=17"
+                            style="color:#eee;font-size:12px;position:absolute;top:14px;">Городское поселение Кратово —
+                            Яндекс Карты</a>
+                        <iframe
+                            src="https://yandex.ru/map-widget/v1/?l=sat%2Cskl&ll=38.218382%2C55.618154&mode=whatshere&whatshere%5Bpoint%5D=38.215743%2C55.618582&whatshere%5Bzoom%5D=17&z=17"
+                            frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer mb-5 mt-5">
+        <div class="container">
+            <div class="footer__inner">
+                <p class="footer__subtitle">Копирование любого материала с настоящего сайта допускается только с
+                    письменного разрешения администрации сайта. Информация о ценах, планировках, а также специальных
+                    предложениях, размещённых на данном сайте, носит исключительно ознакомительный характер, не является
+                    публичной офертой, определяемой положениями Статьи 437 Гражданского кодекса Российской Федерации.
+                    Представленные на сайте изображения объектов долевого строительства носят предварительный
+                    ознакомительный характер и могут отличаться от фактических проектных решений, реализуемых
+                    застройщиком.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="overflow hidden transparent" id="form-overflow">
+        <div class="container container--modal">
+            <div class="overflow__inner radius-10">
+                <h2 class="title">Заявка</h2>
+                <form action method="post" id="form2" class="form">
+                    <input name="name" type="text" class="form__input" placeholder="Имя" maxlength="30">
+                    <input name="email" type="text" class="form__input" placeholder="Email" maxlength="30">
+                    <input name="tel" type="text" class="form__input" placeholder="Телефон" maxlength="12">
+                    <textarea name="message" size="40" rows="3" class="form__input" placeholder="Сообщение"></textarea>
+                </form>
+                <button id="send-form-2" class="button mt-3 w-100">Отправить</button>
+            </div>
+        </div>
+        <div class="overflow__close" id="overflow__close">
+            <img src="assets/img/close.svg" alt="Закрыть">
         </div>
     </div>
-</footer>
 
-<div class="overflow hidden transparent" id="form-overflow">
-    <div class="container container--modal">
-        <div class="overflow__inner radius-10">
-            <h2 class="title">Заявка</h2>
-            <form action method="post" id="form2" class="form">
-                <input name="name" type="text" class="form__input" placeholder="Имя" maxlength="30">
-                <input name="email" type="text" class="form__input" placeholder="Email" maxlength="30">
-                <input name="tel" type="text" class="form__input" placeholder="Телефон" maxlength="12">
-                <textarea name="message" size="40" rows="3" class="form__input" placeholder="Сообщение"></textarea>
-            </form>
-            <button id="send-form-2" class="button mt-3 w-100">Отправить</button>
-        </div>
-    </div>
-    <div class="overflow__close" id="overflow__close">
-        <img src="assets/img/close.svg" alt="Закрыть">
-    </div>
-</div>
-
-<script type="text/javascript" src="assets/libs/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="assets/libs/jquery-migrate-1.2.1.min.js"></script>
-<script type="text/javascript" src="assets/libs/slick/slick.min.js"></script>
-<script type="text/javascript" src="assets/libs/bootstrap.bundle.min.js"></script>
-<script type="text/javascript" src="assets/js/index.js"></script>
-<script type="text/javascript" src="assets/js/main.js"></script>
-<script type="text/javascript" src="assets/js/forms.js"></script>
+    <script type="text/javascript" src="assets/libs/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="assets/libs/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="assets/libs/slick/slick.min.js"></script>
+    <script type="text/javascript" src="assets/libs/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="assets/js/index.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+    <script type="text/javascript" src="assets/js/forms.js"></script>
 </body>
+
 </html>
