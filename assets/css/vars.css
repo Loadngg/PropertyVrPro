@@ -16,6 +16,8 @@
     --color-black: hsla(0, 0%, 0%, 1);
     --color-white: hsla(255, 100%, 100%, 1);
 
+    --color-youtube: #ff0000;
+
     /* Alpha */
     --color-blue-900-alpha-7: hsla(208, 18%, 46%, .7);
     --color-text-alpha-7:  hsla(202, 20%, 15%, .7);

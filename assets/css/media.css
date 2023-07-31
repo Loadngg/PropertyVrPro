@@ -68,6 +68,8 @@
     .slider__360-tooltip,
     .slider__360-ios-tooltip { height: 500px !important; }
     .slider__360-tooltip > span { bottom: 170px }
+    .slider__360-ios-tooltip > a { bottom: 5rem; }
+    
 }
 
 @media (max-width: 700px) {
@@ -87,4 +89,5 @@
     .slider__360-tooltip,
     .slider__360-ios-tooltip { height: 400px !important; }
     .slider__360-tooltip > span { bottom: 130px }
+    .slider__360-ios-tooltip > a { bottom: 2rem; }
 }
